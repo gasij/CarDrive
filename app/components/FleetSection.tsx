@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import BlurText from "./BlurText/BlurText";
 import {
   Badge,
   CarMeta,
@@ -74,8 +75,24 @@ export default function FleetSection() {
 
   return (
     <Section id="park">
-      <Title>Парк DrivEon</Title>
-      <Sub>Выберите класс — легковые для города или фургоны для перевозок</Sub>
+      <Title role="heading" aria-level={2}>
+        <BlurText
+          text="Парк DrivEon"
+          delay={80}
+          animateBy="chars"
+          direction="top"
+          className="fleet-title-blur"
+        />
+      </Title>
+      <Sub>
+        <BlurText
+          text="Выберите класс — легковые для города или фургоны для перевозок"
+          delay={35}
+          animateBy="words"
+          direction="bottom"
+          className="fleet-sub-blur"
+        />
+      </Sub>
 
       <Panel>
         <Tabs>

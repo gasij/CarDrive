@@ -12,21 +12,31 @@ export const Section = styled.section`
   animation: ${rise} 0.75s ease-out 0.15s both;
 `;
 
-export const FormTitle = styled.h2`
+export const FormTitle = styled.div`
   font-family: bim, system-ui, sans-serif;
   font-size: clamp(1.6rem, 3.5vw, 2.25rem);
   color: #f0f4f5;
   text-align: center;
   margin-bottom: 0.5rem;
+
+  .lead-title-blur span {
+    font: inherit;
+    color: inherit;
+  }
 `;
 
-export const Sub = styled.p`
+export const Sub = styled.div`
   text-align: center;
   color: rgba(240, 244, 245, 0.6);
   font-size: 0.95rem;
   max-width: 28rem;
   margin: 0 auto 1.75rem;
   line-height: 1.5;
+
+  .lead-sub-blur span {
+    font-size: inherit;
+    color: inherit;
+  }
 `;
 
 export const FormCard = styled.div`

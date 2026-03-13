@@ -36,3 +36,21 @@ export const Mid = styled.h1`
   animation: ${fadeUp} 1s ease-out both, ${glow} 4s ease-in-out infinite;
   text-shadow: 0 4px 32px rgba(0, 0, 0, 0.6);
 `;
+
+export const HeroBlur = styled.div`
+  max-width: 22ch;
+  margin: 0 auto;
+  text-align: center;
+
+  .banner-blur-text,
+  .banner-blur-text span {
+    font-family: bim, system-ui, sans-serif;
+    font-size: clamp(1.75rem, 5.2vw, 3rem);
+    line-height: 1.2;
+    color: #f0f4f5;
+    text-shadow: 0 4px 32px rgba(0, 0, 0, 0.6);
+  }
+
+  /* лёгкое свечение после появления */
+  animation: ${glow} 5s ease-in-out infinite 1.2s both;
+`;

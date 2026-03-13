@@ -12,22 +12,34 @@ export const Section = styled.section`
   animation: ${rise} 0.8s ease-out both;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.div`
   font-family: bim, system-ui, sans-serif;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   color: #f0f4f5;
   text-align: center;
   margin-bottom: 0.5rem;
   text-shadow: 0 0 40px rgba(98, 161, 168, 0.35);
+
+  .fleet-title-blur span {
+    font: inherit;
+    color: inherit;
+    text-shadow: inherit;
+  }
 `;
 
-export const Sub = styled.p`
+export const Sub = styled.div`
   text-align: center;
   color: rgba(240, 244, 245, 0.65);
   font-size: 1rem;
   max-width: 36rem;
   margin: 0 auto 1.75rem;
   line-height: 1.5;
+
+  .fleet-sub-blur span {
+    font-size: inherit;
+    color: inherit;
+    line-height: 1.45;
+  }
 `;
 
 export const Panel = styled.div`

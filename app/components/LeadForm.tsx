@@ -2,6 +2,7 @@
 
 import { Button, Form, Input, Select } from "antd";
 import { useState } from "react";
+import BlurText from "./BlurText/BlurText";
 import {
   FieldLabel,
   FormCard,
@@ -22,10 +23,23 @@ export default function LeadForm() {
 
   return (
     <Section id="zayavka">
-      <FormTitle>Оставить заявку</FormTitle>
+      <FormTitle role="heading" aria-level={2}>
+        <BlurText
+          text="Оставить заявку"
+          delay={100}
+          animateBy="chars"
+          direction="top"
+          className="lead-title-blur"
+        />
+      </FormTitle>
       <Sub>
-        Мы свяжемся с вами и подскажем, как начать поездки в DrivEon — без
-        очередей в офисе.
+        <BlurText
+          text="Мы свяжемся с вами и подскажем, как начать поездки в DrivEon — без очередей в офисе."
+          delay={40}
+          animateBy="words"
+          direction="top"
+          className="lead-sub-blur"
+        />
       </Sub>
 
       <FormCard>
