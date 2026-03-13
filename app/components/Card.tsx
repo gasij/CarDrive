@@ -11,9 +11,9 @@ interface CardProps {
 
 export default function CardItems(props: CardProps) {
   return (
-    <Wrap color={props.carClass === "exclusive" ? "red" : "purple"}>
+    <Wrap color={props.carClass === "exclusive" ? "#222928" : "#8ba3a1"}>
       {props.name}
-      <Image src={props.imgUrl} alt={props.name} width={150} height={100}/>
+      <Image src={props.imgUrl} alt={props.name} width={300} height={300} style={{maxHeight:300}}/>
     </Wrap>
   )
 }
